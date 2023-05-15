@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Flex:wght@300;400;600;700;800&family=Space+Grotesk:wght@700&display=swap");
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 20;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  background-color: #fffbf8;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.25rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+h6 {
+  font-size: 1.125rem;
+}
+.font_14 {
+  font-size: 0.875rem;
+}
+.font_12 {
+  font-size: 0.75rem;
+}
+.font_10 {
+  font-size: 10px;
+}
+.font_23 {
+  font-size: 23px;
+}
+.font_30 {
+  font-size: 30px;
+}
+.font_15 {
+  font-size: 15px;
+}
+.font_18 {
+  font-size: 18px;
+}
+.fw_800 {
+  font-weight: 800 !important;
+}
+.fw_600 {
+  font-weight: 600;
+}
+.mw_437 {
+  max-width: 437px;
+}
+.text_input_label {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 13px;
+}
+.logo img {
+  margin-left: -20px;
+}
+.basic_primary_color {
+  color: #5f646d;
+}
+.basic_secondary_color {
+  color: #141414;
+}
+.basic_link,
+.basic_link:hover {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 16px;
+}
+.basic_submit_button {
+  background: #ffda70;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  color: #000;
+  padding: 16px 41px;
+  box-shadow: 4px 4px 0px #000000;
+  font-weight: 700;
+}
+.basic_my_28 {
+  margin: 28px 0;
+}
+.basic_pointer {
+  cursor: pointer;
+}
+.bottom_content {
+  margin-bottom: 53px;
+  bottom: 0;
+}
+.text_input_outer:focus ~ span {
+  color: #000;
+}
+.text_input_outer:focus,
+.basic_custom_dropdown .dropdown-toggle:focus {
+  box-shadow: none;
+  color: #000000;
+  outline: none;
+  border-color: #ffda70;
+}
+.mb_357 {
+  margin-bottom: 357px;
+}
+.text_input_outer,
+.basic_custom_dropdown .dropdown-toggle {
+  border: 1px solid #000000;
+  max-height: 64px;
+  color: #5f646d;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 20px;
+  line-height: 21px;
+  margin-bottom: 17px;
+  border-radius: 2px;
+  background-color: white;
+  overflow: hidden;
+}
+.basic_custom_dropdown .dropdown .dropdown-menu .dropdown-item.active,
+.basic_custom_dropdown .dropdown .dropdown-menu .dropdown-item:active {
+  background-color: #ffda70;
+}
+.basic_custom_dropdown.yellow_side .dropdown-toggle::after {
+  right: 0;
+  top: 0;
+  background-color: #fae8a4;
+  height: 100%;
+  min-width: 10%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: none;
+}
+.basic_custom_dropdown .dropdown-toggle::after {
+  font-family: "Material Symbols Outlined";
+  content: "expand_more";
+  -webkit-font-feature-settings: "liga";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translate(0%, -50%);
+  border: none;
+  font-size: 20px;
+}
+.custom_checkbox {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 14px;
+}
+.custom-checkbox {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000000;
+  border-radius: 1px;
+  transform: translate(0%, -50%);
+}
+.form-check-input[type="checkbox"]:checked + .custom-checkbox::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  transform: rotate(45deg);
+  height: 12px;
+  width: 7px;
+  border-bottom: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+}
+.form-check-input[type="checkbox"]:checked + .custom-checkbox {
+  background-color: #6d39ff;
+  border-color: #6d39ff;
+}
+.form-check-label {
+  padding-left: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  white-space: normal;
+  font-size: 12px;
+}
+#signin_from,
+#signup_from {
+  margin-top: 3.75rem;
+}
+.rings_bg {
+  background-image: url(images/rings.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.multi_select_dropdown .form-check-label {
+  padding: 5px;
+  padding-left: 40px;
+}
+.multi_select_dropdown .multiselect_inner {
+  min-height: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 0;
+  position: relative;
+}
+.multi_select_dropdown .custom-checkbox {
+  left: 10px;
+}
+.rings_bg.bg_bottom {
+  background-size: 30%, contain;
+  background-position: bottom right;
+}
+.price_btn button {
+  background-color: transparent;
+  border: none;
+  color: #141414;
+  font-size: 12px;
+  padding: 5px 10px;
+  font-weight: 500;
+}
+.price_btn button.active {
+  font-weight: 700;
+  color: white;
+  background-color: #141414;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.price_btn {
+  border: 1.28px solid #000000;
+  display: inline-block;
+  padding: 3px;
+  border-radius: 5.12px;
+}
+.card-subtitle {
+  color: #3e3e59;
+}
+.card-title {
+  color: #141414;
+}
+.card-link:hover,
+.card-link {
+  background-color: #141414;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+.card {
+  border: 1.28166px solid #505050;
+  border-radius: 15.3799px;
+}
+.card-body {
+  padding: 20px;
+}
+.card_pricing {
+  font-family: "Space Grotesk", sans-serif;
+}
+.price_card {
+  width: 296px;
+  height: 426px;
+}
+.pricecard_head {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+}
+.goback {
+  margin-top: 24px;
+}
+.payments_head {
+  max-width: 1086px;
+  max-height: 678px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 4px 4px 0px #000000;
+  padding: 91px 47px 12px 57px;
+}
+.payments_form .form-label {
+  color: #828282;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+}
+.payments_form .form-control:focus-within,
+.payments_form .form-control:active,
+.payments_form .form-control:focus {
+  color: #4f4f4f;
+  border-color: #1660cf;
+  outline: 0;
+  box-shadow: none;
+}
+.payments_form input.form-control {
+  color: #828282;
+  font-size: 15px;
+  padding: 12px 14px;
+  border-color: #b2bcca;
+  font-weight: 400;
+  border-radius: 4px;
+  position: relative;
+}
+.card_number input::after {
+  content: "hi";
+}
+.check_color {
+  color: #828282;
+}
+.whatsthis {
+  color: #2f80ed;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+}
+.lockicon span {
+  border: 1px solid #1660cf;
+  border-radius: 50%;
+  padding: 4px;
+  font-size: 20px;
+  color: #1660cf;
+}
+.lockicon {
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: #828282;
+}
+.pay_credit .form-check-label {
+  padding-left: 8px;
+}
+.pay_credit {
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+.pay_credit .form-check-input:focus,
+.privacy_check .form-check-input:focus {
+  box-shadow: none;
+}
+.pay_credit .form-check-input:checked {
+  background-color: #1660cf;
+  border-color: #1660cf;
+}
+#payWithCreditCard {
+  width: 14px;
+  height: 14px;
+  position: relative;
+  top: -2px;
+}
+.bill_light_color {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #4f4f4f;
+}
+.bill_dark {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #4f4f4f;
+  font-weight: 600;
+}
+.totalBill {
+  border-top: 1px solid #e0e0e0;
+}
+.totalBill td {
+  padding: 18px 8px;
+}
+.taxTable td {
+  padding-bottom: 18px;
+}
+.comment_area textarea:focus {
+  box-shadow: none;
+  border-color: #b2bcca;
+}
+.comment_area textarea {
+  padding: 12px 11px 13px 14px;
+  color: #828282;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  resize: none;
+  border: 1px solid #b2bcca;
+}
+.comment_area label {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  position: absolute;
+  color: #828282;
+  top: -10px;
+  left: 10px;
+  background: white;
+  padding: 0 6px;
+}
+.privacy_check .form-check-input:checked {
+  background-color: #1660cf;
+  border-color: #1660cf;
+  box-shadow: none;
+}
+.left_dashed_border {
+  border-left: 4px dashed;
+}

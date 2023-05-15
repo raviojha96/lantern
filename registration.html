@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lantern UI</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+  </head>
+  <body>
+    <section class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="logo">
+            <img src="images/logo.png" alt="logo" />
+          </div>
+        </div>
+      </div>
+      <div class="row payments_head justify-content-center align-items-center">
+        <div class="col-md-7">
+          <h4>Payment method</h4>
+          <div class="position-relative">
+            <form class="payments_form">
+              <div class="mb-3">
+                <label class="form-label d-block"></label>
+                <div class="form-check d-flex align-items-center pay_credit">
+                  <input
+                    class="form-check-input"
+                    id="payWithCreditCard"
+                    type="radio"
+                    name=""
+                    checked
+                  />
+                  <label class="form-check-label" for="payWithCreditCard"
+                    >Pay with Credit Card</label
+                  >
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 mb-3 card_number">
+                  <label for="cardNumber" class="form-label">Card Number</label>
+                  <div class="position-relative">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cardNumber"
+                      maxlength="19"
+                      placeholder="Enter your card number"
+                      required
+                    />
+                    <span
+                      class="check_color position-absolute top-50 end-0 translate-middle-y material-symbols-outlined me-2"
+                    >
+                      check_circle
+                    </span>
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="expirationDate" class="form-label"
+                    >Expiration Date</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="expirationDate"
+                    placeholder="MM/YY"
+                    maxlength="5"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="securityCode" class="form-label"
+                    >Card Security Code</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="securityCode"
+                    maxlength="3"
+                    placeholder="***"
+                    oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label class="form-label" for=""></label>
+                  <div>
+                    <a class="whatsthis" href="#">What is this?</a>
+                  </div>
+                </div>
+                <div class="col mt-2 lockicon d-flex align-items-center">
+                  <span class="material-symbols-outlined me-2"> lock </span>We
+                  protect your payment information using encryption to provide
+                  bank-level security.
+                </div>
+              </div>
+            </form>
+            <div class="position-absolute top-0 end-0">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <img src="images/Visa.png" alt="" />
+                </li>
+                <li class="list-inline-item">
+                  <img src="images/Discover.png" alt="" />
+                </li>
+                <li class="list-inline-item">
+                  <img src="images/Maestro.png" alt="" />
+                </li>
+                <li class="list-inline-item">
+                  <img src="images/Mastercard.png" alt="" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 left_dashed_border">
+          <table class="table table-borderless billing_table">
+            <thead>
+              <tr>
+                <th class="fw_800 font_18">Billing Summary</th>
+                <th class="text-end fw_800 font_18">
+                  <span class="material-symbols-outlined">
+                    arrow_drop_down
+                  </span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="bill_light_color">Subtotal</td>
+                <td class="bill_dark text-end">$3720,27</td>
+              </tr>
+              <tr>
+                <td class="bill_light_color">Discount</td>
+                <td class="bill_dark text-end">-$749.99</td>
+              </tr>
+              <tr>
+                <td class="bill_light_color">
+                  Warranty (Platinum)
+                  <a href="#" class="d-block whatsthis">Remove</a>
+                </td>
+                <td class="bill_dark text-end">$259.99</td>
+              </tr>
+              <tr>
+                <td class="bill_light_color">Shipping</td>
+                <td class="bill_dark text-end">$0.00</td>
+              </tr>
+              <tr class="taxTable">
+                <td class="bill_light_color">Tax</td>
+                <td class="bill_dark text-end">$228.72</td>
+              </tr>
+              <tr class="totalBill">
+                <td class="fw_800 font_18">Grand Total</td>
+                <td class="text-end fw_800 font_18">$3,439.00</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="mb-3 comment_area position-relative">
+            <label class="form-label" for="typeHere">Order Comment</label>
+            <textarea
+              class="form-control"
+              id="typeHere"
+              type="text"
+              placeholder="Type here..."
+            ></textarea>
+          </div>
+          <div class="mb-3">
+            <label class="form-label d-block"></label>
+            <div class="form-check d-flex align-items-center privacy_check">
+              <input
+                class="form-check-input"
+                id="pleaseCheckToAcknowledgeOurPrivacyTermsPolicy"
+                type="checkbox"
+              />
+              <label
+                class="form-check-label"
+                for="pleaseCheckToAcknowledgeOurPrivacyTermsPolicy"
+                >Please check to acknowledge our Privacy &amp; Terms
+                Policy</label
+              >
+            </div>
+          </div>
+          <div class="d-grid">
+            <button class="basic_submit_button" id="submitButton" type="submit">
+              Submit Payment
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

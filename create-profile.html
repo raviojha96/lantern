@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create . Profile</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+  </head>
+  <body>
+    <section class="min-vh-100 rings_bg bg_bottom">
+      <div class="container mb_357">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="logo position-relative">
+              <img src="images/logo.png" alt="logo" />
+            </div>
+            <div class="mw_437">
+              <h1 class="fw_800">Create Your Profile</h1>
+              <p class="text-muted font_14">
+                Enter your account details or use QR code
+              </p>
+              <form id="signup_from" class="mb-5">
+                <div class="mb-3">
+                  <label class="form-label text_input_label" for="firstName"
+                    >First Name</label
+                  >
+                  <div class="position-relative">
+                    <input
+                      class="form-control text_input_outer"
+                      type="text"
+                      placeholder="Enter your first name"
+                    />
+                    <span
+                      class="material-symbols-outlined basic_primary_color position-absolute top-50 end-0 translate-middle-y me-3"
+                    >
+                      face
+                    </span>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label text_input_label" for="lastname"
+                    >Last Name</label
+                  >
+                  <div class="position-relative">
+                    <input
+                      class="form-control text_input_outer"
+                      type="text"
+                      placeholder="Enter your last name"
+                    />
+                    <span
+                      class="material-symbols-outlined basic_primary_color position-absolute top-50 end-0 translate-middle-y me-3"
+                    >
+                      face
+                    </span>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label text_input_label" for="username"
+                    >Username</label
+                  >
+                  <div class="position-relative">
+                    <input
+                      class="form-control text_input_outer"
+                      type="text"
+                      placeholder="Enter your username"
+                    />
+                    <span
+                      class="material-symbols-outlined basic_primary_color position-absolute top-50 end-0 translate-middle-y me-3"
+                    >
+                      face
+                    </span>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label text_input_label" for="password"
+                    >Password</label
+                  >
+                  <div class="position-relative">
+                    <input
+                      class="form-control text_input_outer"
+                      id="password"
+                      type="text"
+                      placeholder="Enter your password"
+                    />
+                    <span
+                      class="material-symbols-outlined basic_primary_color position-absolute top-50 end-0 translate-middle-y me-3"
+                    >
+                      visibility_off
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="mb-3 basic_custom_dropdown multi_select_dropdown yellow_side"
+                >
+                  <label
+                    class="form-label text_input_label"
+                    for="industry_dropdown"
+                    >What Industry Are You In?</label
+                  >
+                  <div class="dropdown industry_dropdown">
+                    <button
+                      class="dropdown-toggle w-100 text-start position-relative m-0"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      data-bs-auto-close="outside"
+                      aria-expanded="false"
+                    >
+                      Select option(s)
+                    </button>
+                    <ul class="dropdown-menu w-100 rounded-0">
+                      <li class="basic_pointer d-flex">
+                        <div class="dropdown-item multiselect_inner">
+                          <label
+                            class="form-check-label h-100 w-100"
+                            for="check1"
+                          >
+                            <input
+                              class="form-check-input d-none"
+                              id="check1"
+                              type="checkbox"
+                              name=""
+                            />
+                            <span class="custom-checkbox"></span>
+                            Remember me
+                          </label>
+                        </div>
+                      </li>
+                      <li class="basic_pointer d-flex">
+                        <div class="dropdown-item multiselect_inner">
+                          <label
+                            class="form-check-label h-100 w-100"
+                            for="check2"
+                          >
+                            <input
+                              class="form-check-input d-none"
+                              id="check2"
+                              type="checkbox"
+                              name=""
+                            />
+                            <span class="custom-checkbox"></span>
+                            Remember me
+                          </label>
+                        </div>
+                      </li>
+                      <li class="basic_pointer d-flex">
+                        <div class="dropdown-item multiselect_inner">
+                          <label
+                            class="form-check-label h-100 w-100"
+                            for="check3"
+                          >
+                            <input
+                              class="form-check-input d-none"
+                              id="check3"
+                              type="checkbox"
+                              name=""
+                            />
+                            <span class="custom-checkbox"></span>
+                            Remember me
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="mb-3 basic_custom_dropdown">
+                  <label
+                    class="form-label text_input_label"
+                    for="country_dropdown"
+                    >Country/Area of Residence</label
+                  >
+                  <div class="dropdown country_dropdown">
+                    <button
+                      class="dropdown-toggle w-100 text-start position-relative m-0"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      United States
+                    </button>
+                    <ul class="dropdown-menu w-100 rounded-0">
+                      <li class="basic_pointer">
+                        <span class="dropdown-item">Option 1</span>
+                      </li>
+                      <li class="basic_pointer">
+                        <span class="dropdown-item">Option 2</span>
+                      </li>
+                      <li class="basic_pointer">
+                        <span class="dropdown-item">Option 3</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label text_input_label" for="city"
+                    >City/Province</label
+                  >
+                  <div class="position-relative">
+                    <input
+                      class="form-control text_input_outer"
+                      type="text"
+                      placeholder="Enter your city/province"
+                    />
+                    <span
+                      class="material-symbols-outlined basic_primary_color position-absolute top-50 end-0 translate-middle-y me-3"
+                    >
+                      visibility_off
+                    </span>
+                  </div>
+                </div>
+                <div class="mb-3 basic_custom_dropdown">
+                  <label class="form-label text_input_label" for="city_dropdown"
+                    >How did you hear about us</label
+                  >
+                  <div class="dropdown city_dropdown">
+                    <button
+                      class="dropdown-toggle w-100 text-start position-relative m-0"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Select item
+                    </button>
+                    <ul class="dropdown-menu w-100 rounded-0">
+                      <li class="basic_pointer">
+                        <span class="dropdown-item">Option 1</span>
+                      </li>
+                      <li class="basic_pointer">
+                        <span class="dropdown-item">Option 2</span>
+                      </li>
+                      <li class="basic_pointer">
+                        <span class="dropdown-item">Option 3</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="d-grid mt-5 pt-5 mb-300">
+                  <button
+                    class="basic_submit_button"
+                    id="submitButton"
+                    type="submit"
+                  >
+                    Select Your Plan
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container position-relative">
+        <p class="font_14 bottom_content">
+          Already registered?
+          <a href="#" class="basic_link">Sign in to your account</a>
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
